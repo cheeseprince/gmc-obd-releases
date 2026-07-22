@@ -19,8 +19,20 @@ that generic scan tools do not expose.
 | **Coin cell** | Backs up the CrowPanel's on-board **PCF8563** real-time clock (I²C 0x51) so the time survives power-down — timestamps the SD logs and drives automatic day/night theming |
 | **OBD adapter** | **Vgate vLinker MS** in BLE mode (classic-CAN ELM327) — see tested adapters below |
 | **Power** | Truck USB (switched 5 V) → board USB-C |
+| **Case** | 3D printed — STLs in [`case/`](case/) — plus **8 × M3 heat-set threaded inserts** (4 mm long, 5 mm OD) and **8 × M3 × 10 mm screws** |
 
 The capacitive touch panel is present but unused; all navigation is via the encoder.
+
+### Case
+
+Three printed parts. Heat-set the inserts into the bottom, then the screws pass through
+the top and frame into them.
+
+| Part | Footprint |
+| :--- | :--- |
+| [`CASE_TOP.stl`](case/CASE_TOP.stl) | 131.4 × 69.4 × 17.0 mm |
+| [`CASE_FRAME.stl`](case/CASE_FRAME.stl) | 102.8 × 69.4 × 20.0 mm |
+| [`CASE_BOTTOM.stl`](case/CASE_BOTTOM.stl) | 131.4 × 69.4 × 19.0 mm |
 
 ## Tested OBD adapters
 
