@@ -44,10 +44,42 @@ Notes from bring-up:
   wrong protocol and every PID then returns `NO DATA`.
 - A single BLE OBD adapter bonds to **one** client at a time.
 
-## Screenshots
+## The display
 
-Pixel-exact renders of the real firmware UI are in [`screenshots/`](screenshots/) —
-all seven gauge pages, the boot splash, and the settings menu.
+Pixel-exact renders of the real firmware UI — generated on the build machine by
+compiling the actual UI code against LVGL, so they match the panel exactly.
+
+![Boot splash](screenshots/splash_day.png)
+
+Seven pages of four tiles, grouped by what you're doing. Rotate the encoder to move the
+cursor; it flows across pages in reading order.
+
+| TOW | POWER |
+| :---: | :---: |
+| ![TOW page](screenshots/page0_day.png) | ![POWER page](screenshots/page1_day.png) |
+| Transmission · coolant · oil pressure · EGT | Boost · horsepower · RPM · engine load |
+
+| REGEN | RANGE |
+| :---: | :---: |
+| ![REGEN page](screenshots/page2_day.png) | ![RANGE page](screenshots/page3_day.png) |
+| DPF Δp · fuel rate · NOx · rail pressure | Fuel and DEF level, plus gallons-to-fill |
+
+Press the encoder to zoom a single tile, with a five-minute trend graph coloured by alarm
+zone. Hold it for settings.
+
+| Focus view | Settings |
+| :---: | :---: |
+| ![Focus view](screenshots/focus_day.png) | ![Settings menu](screenshots/menu_day.png) |
+
+The theme follows sunrise and sunset automatically, computed on-device from the real-time
+clock — no light sensor. Units switch between imperial and metric from the menu.
+
+| Night theme | Metric |
+| :---: | :---: |
+| ![Night theme](screenshots/page0_night.png) | ![Metric units](screenshots/page0_metric.png) |
+
+The remaining pages (TRIP, DIAG, MISC) and every other render are in
+[`screenshots/`](screenshots/).
 
 ## How updates work
 
