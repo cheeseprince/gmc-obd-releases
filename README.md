@@ -8,6 +8,8 @@ Bluetooth LE from a generic ELM327 adapter, including enhanced GM Mode-22 parame
 (transmission temperature, EGT, DPF differential pressure, fuel rail pressure, DEF level)
 that generic scan tools do not expose.
 
+![The unit installed on the dash, showing the towing page](case/case_irl.jpg)
+
 ## Hardware
 
 | Part | Detail |
@@ -24,6 +26,9 @@ that generic scan tools do not expose.
 The capacitive touch panel is present but unused; all navigation is via the encoder.
 
 ### Case
+
+Three-part printed enclosure — the CAD assembly, and the printed result on the dash
+above.
 
 ![Case assembly](case/case_render.png)
 
