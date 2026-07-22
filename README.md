@@ -64,6 +64,11 @@ cursor; it flows across pages in reading order.
 | ![REGEN page](screenshots/page2_day.png) | ![RANGE page](screenshots/page3_day.png) |
 | DPF Δp · fuel rate · NOx · rail pressure | Fuel and DEF level, plus gallons-to-fill |
 
+| TRIP | DIAG | MISC |
+| :---: | :---: | :---: |
+| ![TRIP page](screenshots/page4_day.png) | ![DIAG page](screenshots/page5_day.png) | ![MISC page](screenshots/page6_day.png) |
+| Instant and average economy, in both US and metric units | MAF · EGR · charge-air cooler temp · intake temp | Speed · battery voltage · oil temperature |
+
 Press the encoder to zoom a single tile, with a five-minute trend graph coloured by alarm
 zone. Hold it for settings.
 
@@ -78,7 +83,7 @@ clock — no light sensor. Units switch between imperial and metric from the men
 | :---: | :---: |
 | ![Night theme](screenshots/page0_night.png) | ![Metric units](screenshots/page0_metric.png) |
 
-The remaining pages (TRIP, DIAG, MISC) and every other render are in
+Every render, including the focus-cursor and metric variants of the other pages, is in
 [`screenshots/`](screenshots/).
 
 ## How updates work
