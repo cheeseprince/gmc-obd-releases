@@ -18,7 +18,7 @@ that generic scan tools do not expose.
 | **Input** | Arduino **Modulino** rotary encoder (I²C) — rotate to move, press to zoom, long-press for settings |
 | **Encoder cable** | **SparkFun Qwiic-to-Grove adapter cable, 100 mm** (`B082MM52ZR`) — the board exposes a Grove/Crowtail I²C port, the Modulino uses Qwiic; this bridges them |
 | **Storage** | **microSD** card (FAT32) — 1 Hz CSV drive logs |
-| **Coin cell** | Backs up the CrowPanel's on-board **PCF8563** real-time clock (I²C 0x51) so the time survives power-down — timestamps the SD logs and drives automatic day/night theming |
+| **Clock** | On-board **PCF8563** real-time clock (I²C 0x51) with its coin cell — both ship with the CrowPanel. Timestamps the SD logs and drives automatic day/night theming |
 | **OBD adapter** | **Vgate vLinker MS** in BLE mode (classic-CAN ELM327) — see tested adapters below |
 | **Power** | Truck USB (switched 5 V) → board USB-C |
 | **Case** | 3D printed — STLs in [`case/`](case/) — plus **8 × M3 heat-set threaded inserts** (4 mm long, 5 mm OD) and **8 × M3 × 10 mm screws** |
