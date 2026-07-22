@@ -25,14 +25,20 @@ The capacitive touch panel is present but unused; all navigation is via the enco
 
 ### Case
 
-Three printed parts. Heat-set the inserts into the bottom, then the screws pass through
-the top and frame into them.
+![Case assembly](case/case_render.png)
 
-| Part | Footprint |
-| :--- | :--- |
-| [`CASE_TOP.stl`](case/CASE_TOP.stl) | 131.4 × 69.4 × 17.0 mm |
-| [`CASE_FRAME.stl`](case/CASE_FRAME.stl) | 102.8 × 69.4 × 20.0 mm |
-| [`CASE_BOTTOM.stl`](case/CASE_BOTTOM.stl) | 131.4 × 69.4 × 19.0 mm |
+Three printed parts: a bottom shell that carries the board on moulded standoffs, a frame
+that captures the display bezel, and a top. Heat-set the inserts into the bottom, then the
+screws pass down through the top and frame into them.
+
+| Part | Footprint | STL |
+| :--- | :--- | :--- |
+| Top | 131.4 × 69.4 × 17.0 mm | [`CASE_TOP.stl`](case/CASE_TOP.stl) |
+| Frame | 102.8 × 69.4 × 20.0 mm | [`CASE_FRAME.stl`](case/CASE_FRAME.stl) |
+| Bottom | 131.4 × 69.4 × 19.0 mm | [`CASE_BOTTOM.stl`](case/CASE_BOTTOM.stl) |
+
+Fasteners: **8 × M3 heat-set threaded inserts** (4 mm long, 5 mm OD) and
+**8 × M3 × 10 mm screws**. Everything fits a 140 mm bed.
 
 ## Tested OBD adapters
 
